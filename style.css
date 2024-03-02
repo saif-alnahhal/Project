@@ -1,0 +1,247 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    margin: 100px auto;
+}
+/* navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav .nav-right ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav .nav-right ul a{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    transition: 0.5;
+    border-radius: 10px;
+}
+nav .nav-right ul a:hover{
+    background-color: lightgray;
+}
+nav .nav-left span{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
+nav .nav-left a{
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    transition: 0.5;
+    border-radius: 10px;
+}
+nav .nav-left a:hover{
+    background-color: lightgray;
+}
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* Header */
+header{
+    height: 100vh;
+    background-image: url(architect.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2{
+    font-size: 50px;
+    color: #fff;
+}
+header h2 span{
+    background-color: black;
+    padding: 10px;
+    opacity: 0.7;
+}
+/* Projects */
+.projects h2{
+    font-weight: normal;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.projects h2 hr{
+    opacity: 0.3;
+    margin-bottom: 40px;
+}
+.houses{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.house{
+    width: 24%;
+    position: relative;
+
+}
+.house img{
+    width: 100%;
+}
+.house p{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+/* About */
+.About{
+    margin-left: 20px;
+}
+.About h2{
+    font-weight: normal;
+}
+.About hr{
+    opacity: 0.3;
+    margin-bottom: 40px;
+}
+.About p{
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+.our-team img{
+    flex-wrap: wrap;
+}
+.our-team .a{
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.our-team{
+    display: flex;
+    gap: 10px;
+}
+.team{
+    width: 24%;
+}
+.team img{
+    width: 100%;
+}
+.our-team .b{
+    margin-bottom: 10px;
+}
+button{
+    width: 100%;
+    font-weight: bold;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: gray;
+}
+.contact p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contact input{
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+}
+.d{
+    opacity: 0.3;
+}
+.button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+.map img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+/* Phone */
+@media screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header h2{
+        left: 25%;
+        font-size: 30px;
+    }
+    .houses{
+        flex-direction: column;
+    }
+    .house{
+        width: 100%;
+    }
+    .our-team{
+        flex-direction: column;
+    }
+    .team{
+        width: 100%;
+    }
+}
+/* Ipad */
+@media screen and (min-width : 481px) and (max-width : 768px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+    header h2{
+        left: 40%;
+        font-size: 30px;
+    }
+    .houses{
+        flex-wrap: wrap;
+    }
+    .house{
+        width: 48%;
+    }
+    .our-team{
+        flex-direction: row;
+    }
+    .team{
+        width: 48%;
+    }
+}
